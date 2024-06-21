@@ -1,30 +1,22 @@
 package com.coderscampus.Assignment10.spoonacular.dto;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WeekResponse {
-	@JsonProperty("meals")
-	private List<Meal> meals;
 	
-	@JsonProperty("nutrients")
-	private Nutrients nutrients;
+	 @JsonProperty("week")
+	    private Week week;
 
-	public List<Meal> getMeals() {
-		return meals;
-	}
+	    public Week getWeek() {
+	        return week;
+	    }
 
-	public void setMeals(List<Meal> meals) {
-		this.meals = meals;
-	}
+	    public void setWeek(Week week) {
+	        this.week = week;
+	    }
 
-	public Nutrients getNutrients() {
-		return nutrients;
-	}
-
-	public void setNutrients(Nutrients nutrients) {
-		this.nutrients = nutrients;
-	}
-
+	    @Override
+	    public String toString() {
+	        return "WeekResponse [week=" + week + "]";
+	    }
 }

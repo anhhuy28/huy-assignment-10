@@ -28,5 +28,4 @@ public class DayResponse {
 		this.nutrients = nutrients;
 	}
 	
-
 }
